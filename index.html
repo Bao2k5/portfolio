@@ -1,59 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lê Dương Bảo - Software Engineer Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  
+  <meta name="description" content="Lê Dương Bảo - Fresher Software Engineer chuyên về Backend, Cloud (AWS), Computer Vision (YOLO11) và Multi-Agent Systems (LangGraph).">
+  <meta name="keywords" content="Lê Dương Bảo, Software Engineer, Backend, Cloud, AWS, Python, Node.js, YOLO11, LangGraph, VAU">
+  <meta name="author" content="Lê Dương Bảo">
+  
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- SIDEBAR / HEADER BANNER -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Lê Dương Bảo" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Lê Dương Bảo" width="120">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Lê Dương Bảo">Lê Dương Bảo</h1>
-
           <p class="title">Software Engineer (Backend & AI)</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
+          <span>Hiển thị liên hệ</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -66,59 +51,53 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:leduongbao2019@gmail.com" class="contact-link">leduongbao2019@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+84375225749" class="contact-link">+84 37 522 5749</a>
+              <p class="contact-title">Điện thoại</p>
+              <a href="tel:0375225749" class="contact-link">037-522-5749</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="globe-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">Website</p>
-
-              <a href="https://baoleduong.vercel.app" target="_blank" class="contact-link">baoleduong.vercel.app</a>
+              <p class="contact-title">Học vấn</p>
+              <p class="contact-link">Học viện Hàng không VN</p>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Ho Chi Minh City, Vietnam</address>
+              <p class="contact-title">Địa điểm</p>
+              <address>TP. Hồ Chí Minh, Việt Nam</address>
             </div>
+          </li>
 
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Website</p>
+              <a href="https://baoleduong.vercel.app" target="_blank" class="contact-link">baoleduong.vercel.app</a>
+            </div>
           </li>
 
         </ul>
@@ -134,13 +113,13 @@
           </li>
 
           <li class="social-item">
-            <a href="https://linkedin.com/in/baoleduong" target="_blank" class="social-link" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/baoleduong" target="_blank" class="social-link" title="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="mailto:leduongbao2019@gmail.com" class="social-link" title="Email">
+            <a href="mailto:leduongbao2019@gmail.com" class="social-link" title="Gửi Email">
               <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
@@ -151,349 +130,295 @@
 
     </aside>
 
+    <!-- TECH STACK SLIDER CUỘN NGANG VÔ TẬN -->
+    <section class="tech-slider">
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter: invert(1);">
+            <span>Express</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1);">
+            <span>Flask</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            <span>AWS</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <span>Docker</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+            <span>OpenCV</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <span>Git</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <span>Linux</span>
+          </div>
 
+          <!-- Lặp lại để cuộn vô tận mượt mà -->
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter: invert(1);">
+            <span>Express</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1);">
+            <span>Flask</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            <span>AWS</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <span>Docker</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+            <span>OpenCV</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <span>Git</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- MAIN CONTENT -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- NAVBAR -->
       <nav class="navbar">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>Giới thiệu</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Kinh nghiệm</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Kỹ năng</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Dự án</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Liên hệ</button>
           </li>
 
         </ul>
 
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
+      <!-- GIỚI THIỆU (ABOUT) -->
+      <article class="about active" data-page="giới thiệu">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Giới thiệu</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I am an Information Technology student at <strong>Vietnam Aerospace University (VAU)</strong> with hands-on project experience in backend APIs, database integration, real-time web applications, and Edge AI systems.
+            Xin chào! Tôi là <strong>Lê Dương Bảo</strong>, sinh viên ngành Công nghệ Thông tin tại <strong>Học viện Hàng không Việt Nam (VAU)</strong>. 
+            Tôi định hướng phát triển trở thành Software Engineer chuyên sâu về <strong>Backend APIs, Hệ thống phân tán và ứng dụng AI / Computer Vision</strong>.
           </p>
 
           <p>
-            I specialize in designing robust backend systems with Node.js/Express and Python/Flask, combined with cutting-edge AI pipelines (YOLO11, ByteTrack, LangGraph multi-agent architectures). Seeking an entry-level <strong>Software / Backend Engineer</strong> role with cloud & AI exposure.
+            Tôi có kinh nghiệm thực chiến trong việc thiết kế kiến trúc Backend với Node.js/Express, Python/Flask, tối ưu hoá cơ sở dữ liệu (MongoDB, PostgreSQL, MySQL), 
+            xây dựng pipeline Computer Vision (YOLO11, ByteTrack, OpenCV) và các hệ thống Multi-Agent tự hành thông minh thông qua LangGraph.
+          </p>
+
+          <p>
+            Tôi từng tham gia chương trình đào tạo điện toán đám mây <strong>First Cloud AI Journey (FCAJ)</strong> do AWS bảo trợ, đồng thời 2 lần vinh dự đạt 
+            <strong>Học bổng Khuyến khích học tập</strong> tại Học viện Hàng không Việt Nam.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- CHUYÊN MÔN -->
         <section class="service">
 
-          <h3 class="h3 service-title">What I'm Doing</h3>
+          <h3 class="h3 service-title">Chuyên môn chính</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Backend API icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="backend icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend & API Architecture</h4>
-
+                <h4 class="h4 service-item-title">Backend & REST APIs</h4>
                 <p class="service-item-text">
-                  Designing scalable RESTful APIs with Node.js/Express and Flask, JWT/OAuth auth, Socket.IO real-time data, and robust DB transactions.
+                  Thiết kế & triển khai RESTful APIs hiệu năng cao, bảo mật với JWT/OAuth, real-time Socket.IO, xử lý database transactions và locking an toàn.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="Computer Vision icon" width="40">
+                <img src="./assets/images/icon-monitor.svg" alt="vision icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Computer Vision & Edge AI</h4>
-
                 <p class="service-item-text">
-                  Building real-time detection, tracking & recognition pipelines combining YOLO11, ByteTrack, InsightFace, and OpenCV.
+                  Xây dựng pipeline xử lý hình ảnh và video thời gian thực kết hợp Ultralytics YOLO11, tracking ByteTrack, nhận diện InsightFace và OpenCV.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="Multi-Agent AI icon" width="40">
+                <img src="./assets/images/icon-cloud.svg" alt="multi-agent icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Multi-Agent Systems & LLMs</h4>
-
                 <p class="service-item-text">
-                  Implementing coordinated agent workflows with LangGraph, Band SDK, and configurable LLM routing for automated business tasks.
+                  Xây dựng hệ thống tác tử thông minh với LangGraph và Band SDK, định tuyến LLM linh hoạt (OpenAI, Featherless AI) tự động hoá quy trình ra quyết định.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="Cloud & DevOps icon" width="40">
+                <img src="./assets/images/icon-security.svg" alt="cloud devops icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud & Containerization</h4>
-
+                <h4 class="h4 service-item-title">Cloud Infrastructure & DevOps</h4>
                 <p class="service-item-text">
-                  Practical deployment experience with AWS (EC2, S3, IAM), Docker Compose container orchestration, Linux systems, and Git.
+                  Triển khai ứng dụng trên nền tảng AWS (EC2, S3, IAM), đóng gói container với Docker Compose, quản trị hệ thống Linux và version control với Git.
                 </p>
               </div>
-
             </li>
 
           </ul>
 
         </section>
 
-
-        <!--
-          - tech stack slider
-        -->
-
-        <section class="tech-slider">
-
-          <h3 class="h3 slider-title">Technologies & Tools</h3>
-
-          <div class="slider-container">
-            <div class="slider-track">
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <span>Python</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                <span>JavaScript</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                <span>Node.js</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter: invert(1);">
-                <span>Express</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1);">
-                <span>Flask</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                <span>Docker</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
-                <span>AWS</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                <span>MongoDB</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-                <span>PostgreSQL</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
-                <span>OpenCV</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                <span>Git</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                <span>Linux</span>
-              </div>
-
-              <!-- Duplicate for infinite seamless marquee -->
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <span>Python</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                <span>JavaScript</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                <span>Node.js</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter: invert(1);">
-                <span>Express</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1);">
-                <span>Flask</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                <span>Docker</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
-                <span>AWS</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                <span>MongoDB</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-                <span>PostgreSQL</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
-                <span>OpenCV</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                <span>Git</span>
-              </div>
-              <div class="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                <span>Linux</span>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-
-        <!--
-          - honors & activities
-        -->
-
+        <!-- THÀNH TÍCH NỔI BẬT -->
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Honors & Activities</h3>
+          <h3 class="h3 testimonials-title">Hoạt động & Thành tích</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="VAU Scholarship" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.jpg" alt="VAU Scholarship" width="60" data-testimonials-avatar>
                 </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Academic Scholarship</h4>
-
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Học bổng Khuyến khích VAU</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Awarded the Academic Encouragement Scholarship twice at Vietnam Aerospace University (VAU) for academic excellence in Information Technology.
+                    Vinh dự nhận 2 lần Học bổng Khuyến khích học tập tại Học viện Hàng không Việt Nam nhờ thành tích học tập và rèn luyện xuất sắc.
                   </p>
                 </div>
-
               </div>
             </li>
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
                   <img src="./assets/images/avatar-2.png" alt="Band of Agents Hackathon" width="60" data-testimonials-avatar>
                 </figure>
-
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Band of Agents Hackathon</h4>
-
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Built ExpenseAI - an autonomous multi-agent system coordinating budget, policy, risk, and approval tasks through LangGraph with Dockerized microservices.
+                    Phát triển dự án ExpenseAI - hệ thống 4 tác tử AI phối hợp thẩm định ngân sách, rủi ro và phê duyệt chi tiêu tự động với LangGraph.
                   </p>
                 </div>
-
               </div>
             </li>
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="AWS FCAJ Bootcamp" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.jpg" alt="FCAJ Bootcamp" width="60" data-testimonials-avatar>
                 </figure>
-
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>First Cloud AI Journey (FCAJ)</h4>
-
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Cloud Trainee in the AWS-supported Workforce Bootcamp focused on hands-on AWS cloud architecture, EC2, S3, IAM, and practical AI deployments.
+                    Hoàn thành chương trình đào tạo AWS Cloud do AWS bảo trợ, tích lũy kinh nghiệm thực tế về hạ tầng đám mây và ứng dụng AI.
                   </p>
                 </div>
-
               </div>
             </li>
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Eureka Project" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png" alt="Eureka Award" width="60" data-testimonials-avatar>
                 </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Eureka Research Award</h4>
-
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dự án Nghiên cứu Eureka</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Developed the simulation software component for research on Follow-the-Greens aircraft taxi operations at Tan Son Nhat International Airport.
+                    Tham gia phát triển phần mềm mô phỏng hệ thống Follow-the-Greens điều phối đường lăn tàu bay tại Cảng HKQT Tân Sơn Nhất.
                   </p>
                 </div>
-
               </div>
             </li>
 
@@ -501,90 +426,14 @@
 
         </section>
 
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Award" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Honors Detail</h4>
-
-              <time datetime="2025-2026">2023 — Present</time>
-
-              <div data-modal-text>
-                <p>
-                  Details about achievements, hackathons, and research projects at Vietnam Aerospace University.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
       </article>
 
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
+      <!-- KINH NGHIỆM & HỌC VẤN (RESUME) -->
+      <article class="resume" data-page="kinh nghiệm">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Kinh nghiệm & Học vấn</h2>
         </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Vietnam Aerospace University (VAU)</h4>
-
-              <span>2023 — Expected 2027</span>
-
-              <p class="timeline-text">
-                Bachelor of Engineering in Information Technology. Awarded the <strong>Academic Encouragement Scholarship</strong> twice for high academic standing.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
 
         <section class="timeline">
 
@@ -592,271 +441,289 @@
             <div class="icon-box">
               <ion-icon name="briefcase-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Research & Practical Experience</h3>
+            <h3 class="h3">Nghiên cứu & Dự án Thực tế</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">VLM-3D for Airport Apron Spatial Understanding</h4>
-
-              <span>Faculty Research Project, VAU &bull; Ongoing</span>
-
+              <span>Đề tài NCKH cấp Khoa, Học viện Hàng không Việt Nam &bull; Đang thực hiện</span>
               <p class="timeline-text">
-                <strong>Project Lead:</strong> Investigating vision-language approaches to spatial relationships and multimodal question answering in airport apron imagery using RGB, depth, and spatial representations.
+                <strong>Trưởng nhóm đề tài (Project Lead):</strong><br>
+                • Nghiên cứu hướng tiếp cận Vision-Language Models để hiểu quan hệ không gian và trả lời câu hỏi trực quan trong không gian sân đỗ tàu bay.<br>
+                • Trọng tâm nghiên cứu: biểu diễn không gian và học đa phương thức kết hợp hình ảnh RGB, chiều sâu (depth) và ngôn ngữ tự nhiên.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Follow-the-Greens Taxi Simulation at Tan Son Nhat</h4>
-
-              <span>Eureka Project &bull; Student Research</span>
-
+              <span>Giải thưởng Nghiên cứu Khoa học Eureka &bull; Nghiên cứu sinh viên</span>
               <p class="timeline-text">
-                <strong>Simulation Software Developer:</strong> Developed simulation software components to model and compare guided vs. unguided aircraft taxi operations at Tan Son Nhat International Airport.
+                <strong>Simulation Software Developer:</strong><br>
+                • Xây dựng module phần mềm mô phỏng hoạt động lăn máy bay theo hệ thống Follow-the-Greens tại Sân bay Tân Sơn Nhất.<br>
+                • Phân tích và so sánh các kịch bản vận hành đường lăn có đèn dẫn đường thông minh so với vận hành truyền thống.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">First Cloud AI Journey (FCAJ)</h4>
-
               <span>AWS-supported Workforce Bootcamp</span>
-
               <p class="timeline-text">
-                <strong>Cloud Trainee:</strong> Intensive hands-on training focusing on AWS cloud services (EC2, S3, IAM), container deployment, security, and practical AI application integration.
+                <strong>Cloud Trainee:</strong><br>
+                • Tham gia chương trình huấn luyện chuyên sâu thực hành kiến trúc AWS Cloud (EC2, S3, IAM, VPC, CloudWatch).<br>
+                • Áp dụng quy trình containerization và thực hành triển khai các tác vụ trí tuệ nhân tạo trên cloud.
               </p>
-
             </li>
 
           </ol>
 
         </section>
 
-        <section class="skill">
+        <section class="timeline">
 
-          <h3 class="h3 skills-title">Technical Skills</h3>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Học vấn</h3>
+          </div>
 
-          <ul class="skills-list content-card">
+          <ol class="timeline-list">
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Backend & APIs (Node.js, Express, Flask, REST, Socket.IO)</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Học viện Hàng không Việt Nam (VAU)</h4>
+              <span>2023 — Dự kiến 2027</span>
+              <p class="timeline-text">
+                <strong>Cử nhân Kỹ thuật Công nghệ Thông tin</strong><br>
+                • Nhận <strong>Học bổng Khuyến khích học tập</strong> 2 lần liên tiếp.<br>
+                • Tích cực tham gia các hoạt động nghiên cứu khoa học sinh viên và các giải thi đấu Hackathon.
+              </p>
             </li>
 
-            <li class="skills-item">
+          </ol>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Vision & AI (YOLO11, ByteTrack, InsightFace, LangGraph)</h5>
-                <data value="80">80%</data>
-              </div>
+        </section>
+        
+      </article>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+      <!-- KỸ NĂNG (SKILLS) -->
+      <article class="skills" data-page="kỹ năng">
 
+        <header>
+          <h2 class="h2 article-title">Kỹ năng chuyên môn</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Backend & APIs</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Frameworks & Core Services</h4>
+              <p class="timeline-text">
+                Node.js, Express.js, Python (Flask), RESTful APIs, Socket.IO (Real-time), JWT, Passport authentication, Middleware, SePay Payment Webhooks.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Databases & State (MongoDB, PostgreSQL, MySQL, SQLite)</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database & State Management</h4>
+              <p class="timeline-text">
+                MongoDB / Mongoose, PostgreSQL, MySQL, SQLite (Immediate write locking & transactions).
+              </p>
             </li>
 
-            <li class="skills-item">
+          </ol>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Programming Languages (Python, JavaScript, SQL, C/C++)</h5>
-                <data value="90">90%</data>
-              </div>
+        </section>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+        <section class="timeline">
 
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <h3 class="h3">AI, Computer Vision & Multi-Agent</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Computer Vision & Edge AI</h4>
+              <p class="timeline-text">
+                Ultralytics YOLO11 (Object Detection), ByteTrack (Multi-object Tracking), InsightFace (Face Recognition), OpenCV, ONNX Runtime.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Cloud & DevOps (AWS EC2/S3, Docker Compose, Linux, Git)</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">LLMs & Agentic Systems</h4>
+              <p class="timeline-text">
+                LangGraph integration, Band SDK, Multi-Agent workflow design, Configurable LLM Routing (OpenAI, Featherless AI).
+              </p>
             </li>
 
-          </ul>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="cloud-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Cloud Platforms & DevOps</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AWS Cloud Services</h4>
+              <p class="timeline-text">
+                AWS EC2, S3, IAM, CloudWatch, VPC, Cloud Security & Deployment best practices.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Containerization & Tools</h4>
+              <p class="timeline-text">
+                Docker, Docker Compose, Linux CLI, Git & GitHub, Postman, Vite, Tailwind CSS.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Ngôn ngữ Lập trình</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Programming Languages</h4>
+              <p class="timeline-text">
+                Python, JavaScript (ES6+), TypeScript, SQL, C/C++.
+              </p>
+            </li>
+
+          </ol>
 
         </section>
 
       </article>
 
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
+      <!-- DỰ ÁN & THÀNH TÍCH (PORTFOLIO / CERTIFICATES) -->
+      <article class="certificates" data-page="dự án">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Dự án & Nghiên cứu</h2>
         </header>
 
         <section class="projects">
 
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Backend & Fullstack</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI & Vision</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Research & Simulation</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Backend & Fullstack</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI & Vision</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Research & Simulation</button>
-              </li>
-
-            </ul>
-
-          </div>
-
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="backend & fullstack">
-              <a href="https://github.com/Bao2k5" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="fullstack">
+              <div class="content-card">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="cart-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="Smart Jewelry Store" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Smart Jewelry Store (IoT & E-commerce)</h3>
-
-                <p class="project-category">Backend & Fullstack</p>
-
-              </a>
+                <h3 class="project-title">Smart Jewelry Store</h3>
+                <p class="project-category">Fullstack E-commerce & AI Camera</p>
+                <p class="project-description">
+                  Team Lead. Ứng dụng thương mại điện tử kết hợp AI: React/Vite, Express.js, MongoDB, JWT/OAuth, SePay webhooks. Pipeline AI phát hiện người (YOLO11), theo dõi (ByteTrack), nhận diện khuôn mặt (InsightFace) và cảnh báo xâm nhập IoT.
+                </p>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="ai & vision">
-              <a href="https://github.com/Bao2k5" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="ai">
+              <div class="content-card">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="git-network-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="ExpenseAI" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">ExpenseAI (Multi-Agent LangGraph)</h3>
-
-                <p class="project-category">AI & Vision</p>
-
-              </a>
+                <h3 class="project-title">ExpenseAI</h3>
+                <p class="project-category">Band of Agents Hackathon</p>
+                <p class="project-description">
+                  Hệ thống 4 tác tử AI tự động duyệt chi phí thông qua LangGraph. Flask APIs, React/TypeScript dashboard, SQLite transaction locking an toàn, định tuyến linh hoạt OpenAI và Featherless AI.
+                </p>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="research & simulation">
-              <a href="https://github.com/Bao2k5" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="research">
+              <div class="content-card">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="airplane-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="VLM-3D Airport Apron" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">VLM-3D Apron Spatial Understanding</h3>
-
-                <p class="project-category">Research & Simulation</p>
-
-              </a>
+                <h3 class="project-title">VLM-3D Apron Understanding</h3>
+                <p class="project-category">Đề tài NCKH VAU (Project Lead)</p>
+                <p class="project-description">
+                  Nghiên cứu ứng dụng mô hình ngôn ngữ - thị giác (Vision-Language Models) vào nhận biết quan hệ không gian 3D tại sân đỗ tàu bay với dữ liệu RGB, chiều sâu và câu hỏi đa phương thức.
+                </p>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="research & simulation">
-              <a href="https://github.com/Bao2k5" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="research">
+              <div class="content-card">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="navigate-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-4.png" alt="Follow-the-Greens Taxi Simulation" loading="lazy">
                 </figure>
+                <h3 class="project-title">Follow-the-Greens Simulation</h3>
+                <p class="project-category">Dự án NCKH Eureka</p>
+                <p class="project-description">
+                  Xây dựng phần mềm mô phỏng thuật toán dẫn đường máy bay theo hệ thống đèn xanh Follow-the-Greens tại Cảng hàng không quốc tế Tân Sơn Nhất, phân tích hiệu quả giảm tắc nghẽn đường lăn.
+                </p>
+              </div>
+            </li>
 
-                <h3 class="project-title">Follow-the-Greens Taxi Simulation</h3>
+            <li class="project-item active" data-filter-item data-category="training">
+              <div class="content-card">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="trophy-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">Học bổng Khuyến khích VAU</h3>
+                <p class="project-category">Thành tích học tập xuất sắc</p>
+                <p class="project-description">
+                  2 lần vinh dự nhận Học bổng Khuyến khích học tập tại Học viện Hàng không Việt Nam (VAU) cho sinh viên có điểm số học tập và điểm rèn luyện cao.
+                </p>
+              </div>
+            </li>
 
-                <p class="project-category">Research & Simulation</p>
-
-              </a>
+            <li class="project-item active" data-filter-item data-category="training">
+              <div class="content-card">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="cloud-done-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">First Cloud AI Journey (FCAJ)</h3>
+                <p class="project-category">AWS Cloud Workforce Bootcamp</p>
+                <p class="project-description">
+                  Chương trình thực hành kiến trúc đám mây AWS, triển khai compute (EC2), lưu trữ (S3), bảo mật (IAM) và ứng dụng các dịch vụ AI trên nền tảng AWS.
+                </p>
+              </div>
             </li>
 
           </ul>
@@ -865,45 +732,35 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
+      <!-- LIÊN HỆ (CONTACT) -->
+      <article class="contact" data-page="liên hệ">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Liên hệ</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.5412497672!2d106.36556396492984!3d10.754618128362624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e92c7d9%3A0x6b240590a3c2be95!2zVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4326002406087!2d106.69017831533309!3d10.776889992319095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0x2a4d4b3b0c7b8c8d!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s" width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Gửi tin nhắn cho tôi</h3>
 
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Họ và tên của bạn" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Địa chỉ email" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Nội dung lời nhắn..." required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>Gửi tin nhắn</span>
             </button>
 
           </form>
@@ -916,19 +773,10 @@
 
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- custom js link -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -1,11 +1,7 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
@@ -13,8 +9,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -50,10 +44,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+if (overlay) overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -61,7 +53,9 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
+}
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -113,8 +107,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
-
-
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
@@ -133,8 +125,6 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-
-
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -157,3 +147,92 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Form submission handler
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(form);
+    const name = formData.get('fullname');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    // Simple validation
+    if (!name || !email || !message) {
+      alert('Vui lòng điền đầy đủ thông tin!');
+      return;
+    }
+    
+    // Create mailto link
+    const subject = encodeURIComponent(`Liên hệ từ ${name}`);
+    const body = encodeURIComponent(`Tên: ${name}\nEmail: ${email}\n\nTin nhắn:\n${message}`);
+    const mailtoLink = `mailto:trantruong21.work@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    form.reset();
+    formBtn.setAttribute("disabled", "");
+    
+    // Show success message
+    alert('Cảm ơn bạn đã liên hệ! Email client sẽ mở để gửi tin nhắn.');
+  });
+}
+
+// Add loading animation
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+});
+
+// Add scroll to top functionality
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+// Show/hide scroll to top button
+window.addEventListener('scroll', function() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollButton = document.querySelector('.scroll-to-top');
+  
+  if (scrollButton) {
+    if (scrollTop > 300) {
+      scrollButton.classList.add('show');
+    } else {
+      scrollButton.classList.remove('show');
+    }
+  }
+});
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+  // Set default active page
+  const defaultPage = document.querySelector('[data-page="giới thiệu"]');
+  const defaultNavLink = document.querySelector('[data-nav-link]');
+  
+  if (defaultPage && defaultNavLink) {
+    defaultPage.classList.add('active');
+    defaultNavLink.classList.add('active');
+  }
+  
+  // Initialize filter for certificates page
+  filterFunc('all');
+});
