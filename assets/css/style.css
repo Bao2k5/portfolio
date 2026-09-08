@@ -129,10 +129,24 @@ button,
 textarea,
 ion-icon { display: block; }
 
-img { height: auto; }
+.avatar-box {
+  width: 125px;
+  height: 125px;
+  border-radius: 50% !important;
+  overflow: hidden;
+  border: 3px solid var(--orange-yellow-crayola);
+  box-shadow: 0 0 25px hsla(210, 100%, 60%, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
 
 .avatar-box img {
-  border-radius: 50%;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 50% !important;
 }
 
 input,
