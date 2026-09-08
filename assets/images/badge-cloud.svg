@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glowCloud">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#1e232a" stroke="#0284c7" stroke-width="2"/>
+  <!-- Cloud with checkmark -->
+  <g fill="url(#cloudGrad)" filter="url(#glowCloud)">
+    <path d="M66 40 a16 16 0 0 0 -30 -4 a13 13 0 0 0 -13 13 c0 1 0 2 0.3 3 a15 15 0 0 0 5.7 21 h38 a15 15 0 0 0 0 -30 c-0.3 0 -0.7 0 -1 0.1 Z" opacity="0.9"/>
+    <!-- Checkmark -->
+    <path d="M43 55 l6 6 l13 -13" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

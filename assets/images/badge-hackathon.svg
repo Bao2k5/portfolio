@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="glowAi">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#1e232a" stroke="#2563eb" stroke-width="2"/>
+  <!-- AI Chip / Network -->
+  <g fill="none" stroke="url(#aiGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowAi)">
+    <rect x="34" y="34" width="32" height="32" rx="6" fill="#151921"/>
+    <!-- Chip pins -->
+    <path d="M42 22 v10 M50 22 v10 M58 22 v10"/>
+    <path d="M42 68 v10 M50 68 v10 M58 68 v10"/>
+    <path d="M22 42 h10 M22 50 h10 M22 58 h10"/>
+    <path d="M68 42 h10 M68 50 h10 M68 58 h10"/>
+    <!-- Center AI Node -->
+    <circle cx="50" cy="50" r="6" fill="#38bdf8" stroke="none"/>
+  </g>
+</svg>
