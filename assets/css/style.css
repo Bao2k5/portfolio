@@ -1880,3 +1880,72 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #TECH STACK SLIDER
+\*-----------------------------------*/
+
+.tech-slider {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.tech-slider .slider-title {
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+  animation: techScroll 22s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-gradient-onyx);
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  user-select: none;
+}
+
+.tech-item:hover {
+  border-color: var(--orange-yellow-crayola);
+  transform: translateY(-2px);
+}
+
+.tech-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.tech-item span {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  white-space: nowrap;
+}
+
+@keyframes techScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 10px)); }
+}
