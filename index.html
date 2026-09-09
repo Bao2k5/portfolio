@@ -34,7 +34,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Lê Dương Bảo">Lê Dương Bảo</h1>
-          <p class="title">Software Engineer (Backend & AI)</p>
+          <p class="title">Data Engineer &bull; Backend / Cloud &bull; AI</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -247,16 +247,16 @@
 
         <section class="about-text">
           <p>
-            Xin chào! Tôi là <strong>Lê Dương Bảo</strong>, sinh viên ngành Công nghệ Thông tin tại <strong>Học viện Hàng không Việt Nam (VAU)</strong>. 
-            Tôi định hướng phát triển trở thành Software Engineer / Data Engineer chuyên sâu về <strong>Financial Platforms, Xử lý giao dịch thông lượng cao (High-Throughput), Backend & Phân tán, và Ứng dụng AI</strong>.
+            Xin chào! Tôi là <strong>Lê Dương Bảo</strong>, sinh viên ngành Kỹ thuật Công nghệ Thông tin tại <strong>Học viện Hàng không Việt Nam (VAU)</strong>. 
+            Tôi định hướng phát triển sự nghiệp chuyên sâu trong 3 lĩnh vực: <strong>Data Engineering (Financial Pipelines & Data Systems)</strong>, <strong>Backend / Cloud Engineering</strong> và <strong>Ứng dụng AI / Computer Vision</strong>.
           </p>
 
           <p>
-            Tôi có kinh nghiệm thực chiến trong việc thiết kế kiến trúc tài chính với <strong>Java 21, Spring Boot, LMAX Disruptor (>15.000 TPS), Write-Ahead Log (WAL), Redis Caching, Kafka, PostgreSQL & Oracle SQL</strong>; đồng thời thành thạo xây dựng Backend APIs với Node.js/Python, cơ sở dữ liệu phân tán và pipeline Computer Vision thời gian thực.
+            Thông qua các dự án phần mềm và nghiên cứu khoa học thực tế, tôi có kinh nghiệm thiết kế pipeline xử lý dữ liệu tài chính 50.000 giao dịch với <strong>Python, Apache Kafka, PostgreSQL DWH, Docker Compose</strong>; xây dựng kiến trúc lõi giao dịch hiệu năng cao (>15.000 TPS) với <strong>Java 21, Spring Boot, LMAX Disruptor, WAL, Redis Idempotency</strong>; đồng thời thành thạo phát triển Backend APIs (Node.js/Express, Flask), triển khai hạ tầng đám mây <strong>AWS (EC2, S3, IAM)</strong> và pipeline thị giác máy tính (Ultralytics YOLO11, ByteTrack, InsightFace, OpenCV).
           </p>
 
           <p>
-            Trong chương trình đào tạo <strong>AWS First Cloud AI Journey (FCAJ)</strong>, tôi đã có cơ hội học tập, nghiên cứu và phát triển các giải pháp Cloud & AI thực tế, đồng thời 2 lần vinh dự nhận <strong>Học bổng Khuyến khích học tập</strong> tại Học viện Hàng không Việt Nam.
+            Tôi từng hoàn thành kỳ thực tập 3 tháng <strong>First Cloud AI Journey (FCAJ)</strong> do AWS bảo trợ, đồng thời 2 lần liên tiếp vinh dự nhận <strong>Học bổng Khuyến khích học tập Loại Khá</strong> (2025–2026) tại Học viện Hàng không Việt Nam.
           </p>
         </section>
 
@@ -381,12 +381,14 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">FinCore — Financial Transaction & Order Processing Engine</h4>
-              <span>Tháng 01/2026 — Hiện tại</span>
+              <h4 class="h4 timeline-item-title">Financial Transaction Data Pipeline</h4>
+              <span>Tháng 09/2026 — Hiện tại</span>
               <p class="timeline-text">
-                <strong>Hệ thống Lõi Xử lý Giao dịch Tài chính & Khớp lệnh Đa luồng Hiệu năng cao</strong><br>
-                • <strong>Lead Engineer:</strong> Thiết kế kiến trúc xử lý thông lượng cao (>15.000 TPS, P99 &lt; 15ms) với Java 21, Spring Boot, LMAX Disruptor (RingBuffer lock-free) và Write-Ahead Log (WAL) đảm bảo Zero Data Loss.<br>
-                • Tích hợp Redis Idempotency chống trừ tiền 2 lần, chuẩn bản tin tài chính FIX Protocol, và tối ưu hóa PostgreSQL Star Schema với Partitioning và PL/pgSQL Stored Functions.
+                <strong>Data Engineer &bull; Financial Data Platform & Event Streaming</strong><br>
+                • Xây dựng pipeline xử lý dữ liệu tài chính hướng sự kiện (event-driven) với Python, Apache Kafka và PostgreSQL DWH để xử lý 50.000 giao dịch mô phỏng từ file thô vào các bảng phân tích có cấu trúc.<br>
+                • Thiết kế 6 bảng PostgreSQL theo chuẩn Star Schema (bản ghi thô, giao dịch đã làm sạch, bản ghi bị từ chối rejected records, audit logs và báo cáo phân tích).<br>
+                • Triển khai kiểm định dữ liệu cho 4 nhóm lỗi: trùng request (duplicate), thiếu trường dữ liệu, số tiền âm/không hợp lệ và trạng thái giao dịch bất thường.<br>
+                • Thiết kế nạp dữ liệu gia tăng (incremental loading), audit logs và 3 báo cáo SQL phân tích khối lượng, kết quả xử lý và chất lượng dữ liệu; đóng gói container với Docker Compose.
               </p>
             </li>
 
@@ -394,9 +396,9 @@
               <h4 class="h4 timeline-item-title">VLM-3D for Airport Apron Spatial Understanding</h4>
               <span>Tháng 06/2025 — Hiện tại</span>
               <p class="timeline-text">
-                <strong>Đề tài NCKH cấp Giảng viên &bull; Học viện Hàng không Việt Nam</strong><br>
-                • <strong>Chủ nhiệm đề tài (Project Lead):</strong> Nghiên cứu hướng tiếp cận Vision-Language Models để hiểu quan hệ không gian và trả lời câu hỏi trực quan trong không gian sân đỗ tàu bay.<br>
-                • Trọng tâm nghiên cứu: biểu diễn không gian và học đa phương thức kết hợp hình ảnh RGB, chiều sâu (depth) và ngôn ngữ tự nhiên.
+                <strong>Project Lead &bull; Đề tài NCKH cấp Giảng viên, Học viện Hàng không Việt Nam</strong><br>
+                • Tổ chức tập dữ liệu đa phương thức tổng hợp gồm 300 cảnh sân đỗ máy bay, mỗi cảnh chứa hình ảnh RGB, chiều sâu chuẩn (metric depth .EXR), mặt nạ phân vùng (segmentation masks) và siêu dữ liệu 3D.<br>
+                • Thiết kế quy trình tiền xử lý chuyển đổi tài nguyên và chú thích thành đầu vào có cấu trúc cho mô hình học quan hệ không gian và trả lời câu hỏi trực quan (Visual QA).
               </p>
             </li>
 
@@ -404,9 +406,9 @@
               <h4 class="h4 timeline-item-title">Follow-the-Greens Taxi Simulation at Tan Son Nhat</h4>
               <span>Tháng 01/2025 — Hiện tại</span>
               <p class="timeline-text">
-                <strong>Đề tài Nghiên cứu Khoa học Sinh viên (Euréka)</strong><br>
-                • <strong>Simulation Software Developer:</strong> Xây dựng module phần mềm mô phỏng hoạt động lăn máy bay theo hệ thống Follow-the-Greens tại Sân bay Tân Sơn Nhất.<br>
-                • Phân tích và so sánh các kịch bản vận hành đường lăn có đèn dẫn đường thông minh so với vận hành truyền thống.
+                <strong>Simulation Software Developer &bull; Đề tài NCKH Sinh viên (Euréka)</strong><br>
+                • Phát triển các thành phần phần mềm mô phỏng và định nghĩa 6 kịch bản vận hành dẫn đường máy bay theo hệ thống đèn xanh Follow-the-Greens tại Cảng HKQT Tân Sơn Nhất.<br>
+                • Mô hình hóa tuyến lăn máy bay và logic dẫn hướng thông minh nhằm đánh giá giải pháp vận hành mặt đất an toàn và tối ưu hóa thời gian lăn.
               </p>
             </li>
 
@@ -414,9 +416,9 @@
               <h4 class="h4 timeline-item-title">First Cloud AI Journey (FCAJ)</h4>
               <span>2024 — 2025</span>
               <p class="timeline-text">
-                <strong>AWS-supported Workforce Bootcamp</strong><br>
-                • <strong>Cloud Trainee:</strong> Tham gia chương trình huấn luyện chuyên sâu thực hành kiến trúc AWS Cloud (EC2, S3, IAM, VPC, CloudWatch).<br>
-                • Áp dụng quy trình containerization và thực hành triển khai các tác vụ trí tuệ nhân tạo trên cloud.
+                <strong>Cloud Intern &bull; 3-month Internship &bull; AWS-supported Workforce Bootcamp</strong><br>
+                • Trực tiếp xây dựng 2 dự án thực hành chuyên sâu sử dụng các dịch vụ AWS: Amazon EC2 cho tính toán và Amazon S3 cho lưu trữ đối tượng.<br>
+                • Cấu hình quy trình triển khai ứng dụng, containerization và lưu trữ trong môi trường đám mây AWS.
               </p>
             </li>
 
@@ -436,12 +438,12 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Học viện Hàng không Việt Nam (VAU)</h4>
-              <span>2023 — Dự kiến 2027</span>
+              <h4 class="h4 timeline-item-title">Học viện Hàng không Việt Nam (Vietnam Aviation Academy - VAU)</h4>
+              <span>Tháng 10/2023 — Dự kiến Tháng 03/2027</span>
               <p class="timeline-text">
-                <strong>Cử nhân Kỹ thuật Công nghệ Thông tin</strong><br>
-                • Nhận <strong>Học bổng Khuyến khích học tập</strong> 2 lần liên tiếp.<br>
-                • Tích cực tham gia các hoạt động nghiên cứu khoa học sinh viên và các giải thi đấu Hackathon.
+                <strong>Cử nhân Kỹ thuật Công nghệ Thông tin (Bachelor of Engineering in Information Technology)</strong><br>
+                • Vinh dự nhận <strong>Học bổng Khuyến khích học tập Loại Khá</strong> 2 lần liên tiếp (2025–2026).<br>
+                • Chủ nhiệm đề tài NCKH cấp Giảng viên, tác giả đề tài nghiên cứu Euréka và thành viên tích cực trong các giải đấu Hackathon.
               </p>
             </li>
 
@@ -616,10 +618,10 @@
                     <ion-icon name="flash-outline"></ion-icon>
                   </div>
                 </figure>
-                <h3 class="project-title">FinCore — Financial Transaction Engine</h3>
-                <p class="project-category">High-Throughput Financial Core & Data Platform</p>
+                <h3 class="project-title">Financial Transaction Data Pipeline</h3>
+                <p class="project-category">Data Engineer &bull; Financial Data Platform & Streaming</p>
                 <p class="project-description">
-                  Hệ thống lõi xử lý giao dịch và khớp lệnh tài chính hiệu năng cao (&gt;15.000 TPS, P99 &lt; 15ms). Ứng dụng <strong>Java 21, Spring Boot, kiến trúc RingBuffer lock-free LMAX Disruptor</strong>, cơ chế <strong>Write-Ahead Log (WAL)</strong> đảm bảo Zero Data Loss, <strong>Redis Idempotency</strong> chống trừ tiền 2 lần, chuẩn truyền tin <strong>FIX Protocol 4.4</strong> và tối ưu hóa <strong>PostgreSQL / Oracle DWH</strong> (Table Partitioning, B-Tree Index, PL/pgSQL Stored Functions).
+                  Xây dựng pipeline xử lý dữ liệu tài chính hướng sự kiện (Event-driven) với <strong>Python, Apache Kafka và PostgreSQL</strong> để xử lý 50.000 giao dịch mô phỏng từ file thô vào 6 bảng Data Warehouse (Star Schema). Tích hợp kiến trúc <strong>Java 21, Spring Boot, LMAX Disruptor</strong> (&gt;15.000 TPS), cơ chế <strong>Write-Ahead Log (WAL)</strong> đảm bảo Zero Data Loss, <strong>Redis Idempotency</strong> chống trừ tiền 2 lần, kiểm định 4 nhóm lỗi dữ liệu, nạp gia tăng (incremental load), audit logs và đóng gói bằng Docker Compose.
                 </p>
               </div>
             </li>
@@ -632,9 +634,9 @@
                   </div>
                 </figure>
                 <h3 class="project-title">Smart Jewelry Store</h3>
-                <p class="project-category">Fullstack E-commerce & AI Camera</p>
+                <p class="project-category">Đồ án Tốt nghiệp &bull; Team Lead & AI / Fullstack Developer</p>
                 <p class="project-description">
-                  Team Lead. Ứng dụng thương mại điện tử kết hợp AI: React/Vite, Express.js, MongoDB, JWT/OAuth, SePay webhooks. Pipeline AI phát hiện người (YOLO11), theo dõi (ByteTrack), nhận diện khuôn mặt (InsightFace) và cảnh báo xâm nhập IoT.
+                  Trưởng nhóm 3 thành viên phát triển hệ thống e-commerce với React/Vite, Express.js, MongoDB. Thiết kế 4 luồng dữ liệu cốt lõi (xác thực, danh mục sản phẩm, quản lý đơn hàng, webhook thanh toán SePay). Phân quyền 3 role người dùng, giám sát real-time; tích hợp pipeline Computer Vision (YOLO11, ByteTrack, InsightFace) nhận diện và cảnh báo xâm nhập; triển khai trên AWS EC2, Vercel và MongoDB Atlas.
                 </p>
               </div>
             </li>
@@ -647,9 +649,9 @@
                   </div>
                 </figure>
                 <h3 class="project-title">ExpenseAI</h3>
-                <p class="project-category">Band of Agents Hackathon</p>
+                <p class="project-category">Band of Agents Hackathon &bull; System Design & Development</p>
                 <p class="project-description">
-                  Hệ thống 4 tác tử AI tự động duyệt chi phí thông qua LangGraph. Flask APIs, React/TypeScript dashboard, SQLite transaction locking an toàn, định tuyến linh hoạt OpenAI và Featherless AI.
+                  Thành viên nhóm thiết kế hệ thống và phát triển toàn bộ software stack: Flask APIs, React/TypeScript dashboard, điều phối 4 tác tử AI thông qua LangGraph (ngân sách, chính sách, rủi ro, phê duyệt). Logic phê duyệt nhóm cập nhật trạng thái, ngân sách và audit logs trong transaction database; SQLite immediate write locking; định tuyến LLM linh hoạt (OpenAI, Featherless AI).
                 </p>
               </div>
             </li>
@@ -661,10 +663,10 @@
                     <ion-icon name="airplane-outline"></ion-icon>
                   </div>
                 </figure>
-                <h3 class="project-title">VLM-3D Apron Understanding</h3>
-                <p class="project-category">Đề tài NCKH cấp Giảng viên VAU (Chủ nhiệm đề tài)</p>
+                <h3 class="project-title">VLM-3D for Airport Apron Understanding</h3>
+                <p class="project-category">Đề tài NCKH cấp Giảng viên VAU &bull; Project Lead</p>
                 <p class="project-description">
-                  Nghiên cứu ứng dụng mô hình ngôn ngữ - thị giác (Vision-Language Models) vào nhận biết quan hệ không gian 3D tại sân đỗ tàu bay với dữ liệu RGB, chiều sâu và câu hỏi đa phương thức.
+                  Chủ nhiệm đề tài nghiên cứu tiếp cận Vision-Language Models để hiểu quan hệ không gian 3D tại sân đỗ máy bay. Tổ chức tập dữ liệu đa phương thức tổng hợp gồm 300 cảnh (RGB, metric depth .EXR, segmentation masks, 3D metadata); thiết kế quy trình tiền xử lý chuyển đổi tài nguyên thành đầu vào có cấu trúc cho mô hình học quan hệ không gian và trả lời câu hỏi trực quan.
                 </p>
               </div>
             </li>
@@ -676,25 +678,10 @@
                     <ion-icon name="navigate-outline"></ion-icon>
                   </div>
                 </figure>
-                <h3 class="project-title">Follow-the-Greens Simulation</h3>
-                <p class="project-category">Đề tài NCKH Sinh viên (Euréka)</p>
+                <h3 class="project-title">Follow-the-Greens Taxi Simulation</h3>
+                <p class="project-category">Đề tài NCKH Sinh viên (Euréka) &bull; Simulation Developer</p>
                 <p class="project-description">
-                  Xây dựng phần mềm mô phỏng thuật toán dẫn đường máy bay theo hệ thống đèn xanh Follow-the-Greens tại Cảng hàng không quốc tế Tân Sơn Nhất, phân tích hiệu quả giảm tắc nghẽn đường lăn.
-                </p>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="training">
-              <div class="content-card">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="trophy-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Học bổng Khuyến khích VAU</h3>
-                <p class="project-category">Thành tích học tập xuất sắc</p>
-                <p class="project-description">
-                  2 lần vinh dự nhận Học bổng Khuyến khích học tập tại Học viện Hàng không Việt Nam (VAU) cho sinh viên có điểm số học tập và điểm rèn luyện cao.
+                  Phát triển các thành phần phần mềm mô phỏng và định nghĩa 6 kịch bản vận hành dẫn đường máy bay theo hệ thống đèn xanh Follow-the-Greens tại Cảng HKQT Tân Sơn Nhất. Mô hình hóa tuyến lăn máy bay và logic dẫn hướng thông minh nhằm đánh giá giải pháp vận hành mặt đất an toàn, giảm thiểu tắc nghẽn đường lăn.
                 </p>
               </div>
             </li>
@@ -707,9 +694,24 @@
                   </div>
                 </figure>
                 <h3 class="project-title">First Cloud AI Journey (FCAJ)</h3>
-                <p class="project-category">AWS Cloud Workforce Bootcamp</p>
+                <p class="project-category">AWS Cloud Workforce Bootcamp &bull; 3-Month Internship</p>
                 <p class="project-description">
-                  Chương trình thực hành kiến trúc đám mây AWS, triển khai compute (EC2), lưu trữ (S3), bảo mật (IAM) và ứng dụng các dịch vụ AI trên nền tảng AWS.
+                  Kỳ thực tập 3 tháng do AWS bảo trợ. Trực tiếp xây dựng độc lập 2 dự án thực hành sử dụng dịch vụ AWS: Amazon EC2 cho hạ tầng tính toán và Amazon S3 cho lưu trữ đối tượng. Cấu hình quy trình triển khai ứng dụng, containerization và lưu trữ trong môi trường đám mây AWS.
+                </p>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="training">
+              <div class="content-card">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="trophy-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">Học bổng Khuyến khích học tập VAU</h3>
+                <p class="project-category">Thành tích học tập xuất sắc &bull; 2 Lần liên tiếp</p>
+                <p class="project-description">
+                  2 lần liên tiếp vinh dự nhận Học bổng Khuyến khích học tập Loại Khá (2025–2026) tại Học viện Hàng không Việt Nam (VAU) nhờ thành tích học tập, nghiên cứu khoa học và rèn luyện xuất sắc.
                 </p>
               </div>
             </li>
