@@ -178,20 +178,19 @@ if (form) {
       return;
     }
     
-    // Create mailto link
-    const subject = encodeURIComponent(`Liên hệ từ ${name}`);
-    const body = encodeURIComponent(`Tên: ${name}\nEmail: ${email}\n\nTin nhắn:\n${message}`);
-    const mailtoLink = `mailto:trantruong21.work@gmail.com?subject=${subject}&body=${body}`;
+    const recipient = 'leduongbao2019@gmail.com';
+    const subject = encodeURIComponent(`[Portfolio] Liên hệ từ ${name} (${email})`);
+    const body = encodeURIComponent(`Xin chào Lê Dương Bảo,\n\nTôi là: ${name}\nEmail liên hệ: ${email}\n\nNội dung tin nhắn:\n${message}\n\n---\nTin nhắn gửi từ Portfolio https://bao2k5.github.io/portfolio/`);
     
-    // Open email client
-    window.location.href = mailtoLink;
+    // Mở trực tiếp giao diện soạn thư của Gmail trên Web
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+    
+    // Mở trong tab mới
+    window.open(gmailUrl, '_blank');
     
     // Reset form
     form.reset();
     formBtn.setAttribute("disabled", "");
-    
-    // Show success message
-    alert('Cảm ơn bạn đã liên hệ! Email client sẽ mở để gửi tin nhắn.');
   });
 }
 
